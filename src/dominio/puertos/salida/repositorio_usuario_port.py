@@ -3,7 +3,7 @@ from dominio.modelo.usuario import Usuario
 
 class RepositorioUsuarioPort(ABC):  
     @abstractmethod
-    def obtener_por_nombre_usuario(self, username: str) -> Usuario:  # Changed from get_by_username
+    def obtener_por_nombre_usuario(self, username: str) -> Usuario:  
         pass
     
     @abstractmethod
@@ -11,5 +11,5 @@ class RepositorioUsuarioPort(ABC):
         pass
     
     @abstractmethod
-    def validar_credenciales(self, username: str, password: str) -> bool:  # Already in Spanish
+    def validar_credenciales(self, username: str, password: str) -> bool: 
         pass

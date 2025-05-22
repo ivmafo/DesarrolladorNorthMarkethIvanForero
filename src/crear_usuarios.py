@@ -2,7 +2,7 @@ import sqlite3
 
 def crear_usuarios_ejemplo():
     # Conectamos a la base de datos (la crea si no existe)
-    conexion = sqlite3.connect('usuarios_cheveres.db')
+    conexion = sqlite3.connect('usuarios.db')
     cursor = conexion.cursor()
     
     # Creamos la tabla si no existe
