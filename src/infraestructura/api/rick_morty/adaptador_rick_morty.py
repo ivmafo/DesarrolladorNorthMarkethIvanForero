@@ -7,5 +7,6 @@ class ServicioRickMorty:
     def obtener_personajes(self):  
         response = requests.get(self.api_url)
         if response.status_code == 200:
+            print(response.json()['results'])
             return response.json()['results'][:100]
         return []
